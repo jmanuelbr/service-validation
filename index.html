@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Service Validation</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="container">
+	<h1>Service Response Validation</h1>
+	<select name="services" id="services">
+		<option disabled selected value> -- select an endpoint -- </option>
+	</select>
+	<span id="service-url">URL here</span>
+
+
+	<label for="json-response">Paste here the JSON response</label>
+
+<textarea id="json-response" name="json-response">
+{
+	...
+}
+</textarea>
+<button id="validate-cta" class="btn btn-primary disabled" type="submit">Validate</button>
+<button id="load-mock-cta" type="button" class="btn btn-dark disabled">Load mocked response</button>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

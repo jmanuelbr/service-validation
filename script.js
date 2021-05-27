@@ -390,6 +390,10 @@ validateIalGetPaymentCalculatorDefault = (res) => {
             			}
             }
           }
+          else if (plan.termValues && plan.termValues.length <= 0) {
+          	addError('termValues array for plan ' + plan.code + ' is empty');
+          }
+          console.log('plan.mileageValues.length', plan.mileageValues.length);
           if (plan.mileageValues && plan.mileageValues.length > 0) {
             	for (let j = 0; j < plan.mileageValues.length; j++) {
             			let mileageValue = plan.mileageValues[j];
@@ -397,6 +401,9 @@ validateIalGetPaymentCalculatorDefault = (res) => {
             				addError('mileageValue.mileage for plan ' + plan.code + ' is empty');
             			}
             }
+          }
+          else if (plan.mileageValues && plan.mileageValues.length <= 0) {
+          	addError('mileageValues array for plan ' + plan.code + ' is empty');
           }
 
       }		

@@ -9,9 +9,9 @@
       "name": "sap-prod",
       "url":"https://Sapprod.com"
    },
-   "ial-prod":{
-      "label":"IAL Prod",
-      "name": "ial-prod",
-      "url":"https://IAL-prod.com"
+   "ial-getPaymentCalculator-default":{
+      "label":"IAL EDU getPaymentCalculator (default)",
+      "name": "ial-getPaymentCalculator-default",
+      "url":"https://www.authagent.ford.com/api/secure/financeial/finance/getPaymentCalculator"
    }
 }

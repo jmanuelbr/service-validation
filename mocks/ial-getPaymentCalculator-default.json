@@ -1,0 +1,195 @@
+{
+    "info": null,
+    "code": null,
+    "description": null,
+    "errors": null,
+    "success": true,
+    "provider": "Bank-Now",
+    "monthlyPayment": null,
+    "term": null,
+    "apr": null,
+    "annualMileage": null,
+    "deposit": 0,
+    "sellingPrice": null,
+    "totalAmountFinancedStandard": null,
+    "optionalFinalPayment": null,
+    "totalCost": null,
+    "downPayment": null,
+    "termsAndConditions": null,
+    "cost": null,
+    "disclaimer": null,
+    "plans": [
+        {
+            "code": "ff",
+            "termValues": [
+                {
+                    "term": 12,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 18,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 24,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 30,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 36,
+                    "defaultFlag": true,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 42,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 48,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 54,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                },
+                {
+                    "term": 60,
+                    "defaultFlag": false,
+                    "minDeposit": 0,
+                    "maxDeposit": 29047.5
+                }
+            ],
+            "mileageValues": [
+                {
+                    "mileage": 10000,
+                    "defaultFlag": true
+                },
+                {
+                    "mileage": 15000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 20000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 25000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 30000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 35000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 40000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 45000,
+                    "defaultFlag": false
+                },
+                {
+                    "mileage": 50000,
+                    "defaultFlag": false
+                }
+            ],
+            "default": false
+        }
+    ],
+    "defaultPlanCode": "ff",
+    "defaultTerm": 36,
+    "defaultMileage": 10000,
+    "defaultRate": 4.9,
+    "dealerCode": null,
+    "depositPercentage": null,
+    "productType": null,
+    "clientType": null,
+    "vatIncluded": false,
+    "insurances": null,
+    "feeTypes": null,
+    "simulationChecksum": null,
+    "monthlyPaymentWithInclusiveFee": null,
+    "numberOfPayments": null,
+    "listPrice": null,
+    "priceAdjustment": null,
+    "govtDiscount": null,
+    "depositAllowance": null,
+    "interestRate": null,
+    "totalCharge": null,
+    "fees": null,
+    "totalAmountPayable": null,
+    "creditCost": null,
+    "securityDeposit": null,
+    "borrowingRate": null,
+    "excessMileageCharge": null,
+    "totalAmountFinancedWithInsurance": null,
+    "totalAmountFinancedWithoutInsurance": null,
+    "monthlyPaymentWithoutInclusiveFee": null,
+    "purchaseFee": null,
+    "gapAmount": null,
+    "pppAmount": null,
+    "warrantyAmount": null,
+    "totalMapMonthlyPayments": null,
+    "promotionalPrice": null,
+    "staticIntRate": null,
+    "establishmentFee": null,
+    "warrantyDesc": null,
+    "warrantyCode": null,
+    "initialPayment": null,
+    "depositWithAllowance": null,
+    "interest": null,
+    "monthlyInsuranceAmount": null,
+    "apr2": null,
+    "totalMileage": null,
+    "insurancePremiums": null,
+    "totalAmountRepaid": null,
+    "customerSaving": null,
+    "revolvingIntRate": null,
+    "amountPayableLessGmfv": null,
+    "staticCharge": null,
+    "revolvingCharge": null,
+    "creditAppData": null,
+    "finalPrice": null,
+    "unusedMileage": null,
+    "hashPayment": null,
+    "msrp": null,
+    "differenceMsrp": null,
+    "dealerDeposit": null,
+    "balloonPayment": null,
+    "incentives": null,
+    "totalIncentivesAmount": null,
+    "estimateCashDueAtDealer": null,
+    "defaultDownPayment": null,
+    "defaultInitialRental": null,
+    "tradeIn": null,
+    "tradeInOverage": null,
+    "validations": null,
+    "pricingId": null,
+    "campaignId": null,
+    "mileageUnit": null,
+    "totalDeposit": null,
+    "nominalRate": null,
+    "effectiveRate": null
+}

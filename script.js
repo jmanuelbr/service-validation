@@ -1,6 +1,7 @@
 let config = {};
 let selectedService = {};
 let errors = {};
+let errorsFound = false;
 
 $(document).ready(function() {
     initialise();
@@ -44,20 +45,55 @@ $("#load-mock-cta").click(function() {
     setMocksInTextArea();
 });
 
+
+$("#prettify").click(function() {
+    let textAreaJson = $('#json-response').val();
+    try {
+    	let parsedJson = JSON.parse(textAreaJson);
+    	$('#json-response').val(JSON.stringify(parsedJson, undefined, 2));
+    } catch(error) {
+    	// Do nothing
+    }
+
+});
+
 $("#validate-cta").click(function() {
+		errorsFound = false;
+		$("#error-list").empty();
+		$('#no-errors').hide();
+    const textArea = $('#json-response').val();
+    let res = null;
+    try {
+    	res = JSON.parse(textArea);
+    } catch(error) {
+    	addError("Error parsing JSON, validate structure first");
+    	return;
+    }
+
     switch (selectedService) {
         case 'bsl-prod-ngc-load':
             console.log('validating bsl-prod-ngc-load');
-            validateBslProdNgcLoad()
+            validateBslProdNgcLoad(res);
             break;
         case 'sap-prod':
             // code block
             break;
-        case 'ial-prod':
-            // code block
+        case 'ial-getPaymentCalculator-default':
+            validateIalGetPaymentCalculatorDefault(res);
             break;
         default:
             // code block
+    }
+
+    if (!errorsFound) {
+    	$('#modal-title').text('Validation passed');
+    	$('#validation-passed-message').show();
+    	console.log('no errors');
+    }
+    else {
+    	console.log('errors found');
+    	$('#modal-title').text('Validation errors found!');
+    	$('#validation-passed-message').hide();
     }
 });
 
@@ -71,22 +107,24 @@ function getSafe(fn) {
 }
 
 addError = (msg) => {
-    console.info('Error found:', msg);
+		errorsFound = true;
+		$("#error-list").append($("<div>").attr("class", "alert alert-danger")
+				.attr("role", "alert").text(msg));
 }
 
-validateBslProdNgcLoad = () => {
-    const textArea = $('#json-response').val();
-    const res = JSON.parse(textArea);
-    console.log('parsed', res);
+validateBslProdNgcLoad = (res) => {
     const data = res.data;
     if (!res.status) {
         addError("data.status does not exist");
+        return;
     } else if (res.status.statusCode !== 200) {
         addError("res.status.statusCode is not 200");
+        return;
     }
-    if (!res.data.configState || !res.data.features || !res.data.images || !res.data.keyFeatures ||
+    if (!res.data || !res.data.configState || !res.data.features || !res.data.images || !res.data.keyFeatures ||
         !res.data.price || !res.data.props || !res.data.specs || !res.data.timingPoints || !res.data.tyreInfo) {
         addError('bad level 1 data structure: data.X, some object is missing');
+      	return;
     }
     /*
      *	BY MARKETING 
@@ -303,6 +341,65 @@ validateBslProdNgcLoad = () => {
     			}
     		}
     	}
-
+    	/*
+       *	KEY FEATURES
+       */
+    	if (!data.keyFeatures || !data.keyFeatures.walkup || !data.keyFeatures.walkup.combined ||
+    		!data.keyFeatures.walkup.combined.features || data.keyFeatures.walkup.combined.features.length <= 0) {
+        addError('bad level 2 data structure: data.keyfeatures is missing or empty');
+    	}
+    	else {
+    		for (let i = 0; i < data.keyFeatures.walkup.combined.features.length; i++) {
+    			const feature = data.keyFeatures.walkup.combined.features[i];
+    			if (!feature.code || feature.code.length <= 0 || !feature.name || feature.name.length <= 0) {
+    				addError('bad level 3 data structure: data.images.keyfeature.features.name or code is missing');
+    			}
+    		}
+    	}
     }
+}
+
+validateIalGetPaymentCalculatorDefault = (res) => {
+	console.log('res', res);
+	if (!res.success || res.success !== true) {
+		addError('success is not true');
+		return;
+	}
+	if (!res.plans || res.plans.length <= 0) {
+		addError('No plans returned');
+		return;
+	}
+	else {
+		for (let i = 0; i < res.plans.length; i++) {
+            let plan = res.plans[i];
+            if (!plan || !plan.code || plan.code.length <= 0) {
+            	addError('plan.code is empty or missing');
+            	return;
+            }
+            if (plan.termValues && plan.termValues.length > 0) {
+            	for (let j = 0; j < plan.termValues.length; j++) {
+            			let termValue = plan.termValues[j];
+            			if (!termValue.term || termValue.term.length <= 0) {
+            				addError('termValue.term for plan ' + plan.code + ' is empty');
+            			}
+            			if (termValue.minDeposit === null || termValue.minDeposit === undefined) {
+            				addError('termValue.minDeposit for plan ' + plan.code + ' is empty');
+            			}
+            			if (termValue.maxDeposit === null || termValue.maxDeposit === undefined) {
+            				addError('termValue.maxDeposit for plan ' + plan.code + ' is empty');
+            			}
+            }
+          }
+          if (plan.mileageValues && plan.mileageValues.length > 0) {
+            	for (let j = 0; j < plan.mileageValues.length; j++) {
+            			let mileageValue = plan.mileageValues[j];
+            			if (!mileageValue.mileage || mileageValue.mileage.length <= 0) {
+            				addError('mileageValue.mileage for plan ' + plan.code + ' is empty');
+            			}
+            }
+          }
+
+      }		
+	}
+
 }

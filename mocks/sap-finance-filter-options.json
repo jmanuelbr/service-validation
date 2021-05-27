@@ -1,0 +1,148 @@
+{
+    "displayValues": {
+        "plans": [
+            {
+                "termValues": [
+                    {
+                        "defaultFlag": false,
+                        "term": 84
+                    },
+                    {
+                        "defaultFlag": false,
+                        "term": 75
+                    },
+                    {
+                        "defaultFlag": true,
+                        "term": 72
+                    },
+                    {
+                        "defaultFlag": false,
+                        "term": 60
+                    },
+                    {
+                        "defaultFlag": false,
+                        "term": 48
+                    },
+                    {
+                        "defaultFlag": false,
+                        "term": 36
+                    }
+                ],
+                "default": true,
+                "code": "1",
+                "name": "Retail"
+            },
+            {
+                "termValues": [
+                    {
+                        "defaultFlag": false,
+                        "term": 48
+                    },
+                    {
+                        "defaultFlag": false,
+                        "term": 39
+                    },
+                    {
+                        "defaultFlag": true,
+                        "term": 36
+                    },
+                    {
+                        "defaultFlag": false,
+                        "term": 24
+                    }
+                ],
+                "default": false,
+                "code": "2",
+                "name": "Lease",
+                "mileageValues": [
+                    {
+                        "defaultFlag": false,
+                        "mileage": 19500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 18000
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 16500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 15000
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 13500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 12000
+                    },
+                    {
+                        "defaultFlag": true,
+                        "mileage": 10500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 7500
+                    }
+                ]
+            },
+            {
+                "termValues": [
+                    {
+                        "defaultFlag": false,
+                        "term": 48
+                    },
+                    {
+                        "defaultFlag": true,
+                        "term": 36
+                    }
+                ],
+                "default": false,
+                "code": "5",
+                "name": "Retail-TCM",
+                "mileageValues": [
+                    {
+                        "defaultFlag": false,
+                        "mileage": 19500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 18000
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 16500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 15000
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 13500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 12000
+                    },
+                    {
+                        "defaultFlag": true,
+                        "mileage": 10500
+                    },
+                    {
+                        "defaultFlag": false,
+                        "mileage": 7500
+                    }
+                ]
+            }
+        ]
+    },
+    "countryCode": "USA",
+    "defaultValues": {
+        "planCd": "1",
+        "term": 72
+    }
+}

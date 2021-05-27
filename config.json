@@ -4,10 +4,10 @@
       "name": "bsl-prod-ngc-load",
       "url":"https://www.servicescache.ford.com/api/vehicleModel/v1/load?locale=en_GB&retrieve=images,specs,featuresMkt,selectedMkt,featureImages,featureSpecs,keyFeatures,keyFeaturesModel,keyFeaturesWalkup,uscCodes,prices,featurePrices,content&feature=&config=WAEGB-CGW-2021-CX727BEVSUVGBR202100~ACMRJ_VS-LE,DR--H_EN-EJ_HTHAD_TR-WA,PN4JA&namedConfig=default"
    },
-   "sap-prod":{
-      "label":"SAP Prod",
-      "name": "sap-prod",
-      "url":"https://Sapprod.com"
+   "sap-finance-filter-options":{
+      "label":"SAP Finance Filter Options",
+      "name": "sap-finance-filter-options",
+      "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v1/finance-filter-options "
    },
    "ial-getPaymentCalculator-default":{
       "label":"IAL EDU getPaymentCalculator (default)",

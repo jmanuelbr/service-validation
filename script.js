@@ -61,6 +61,7 @@ $("#validate-cta").click(function() {
 		errorsFound = false;
 		$("#error-list").empty();
 		$('#no-errors').hide();
+		$('#validation-passed-message').hide();
     const textArea = $('#json-response').val();
     let res = null;
     try {
@@ -75,8 +76,8 @@ $("#validate-cta").click(function() {
             console.log('validating bsl-prod-ngc-load');
             validateBslProdNgcLoad(res);
             break;
-        case 'sap-prod':
-            // code block
+        case 'sap-finance-filter-options':
+            validateSapFinanceFilterOptions(res);
             break;
         case 'ial-getPaymentCalculator-default':
             validateIalGetPaymentCalculatorDefault(res);
@@ -409,4 +410,45 @@ validateIalGetPaymentCalculatorDefault = (res) => {
       }		
 	}
 
+}
+
+validateSapFinanceFilterOptions = (res) => {
+	if (!res.displayValues || !res.displayValues.plans || res.displayValues.plans.length <= 0) {
+		addError('No plans available');
+	}
+	else {
+		const plans = res.displayValues.plans;
+		for (let i = 0; i < plans.length; i++) {
+			const plan = plans[i];
+			if (!plan.name || plan.name.length <= 0) {
+				addError('The plan has no name');
+			}
+			if (!plan.code || plan.code.length <= 0) {
+				addError('The plan has no code');
+			}
+			if (plan.termValues && plan.termValues.length <=0) {
+				addError('termvalues list for plan is empty');
+			}
+			if (plan.mileageValues && plan.mileageValues.length <=0) {
+				addError('mileageValues list for plan is empty');
+			}
+			if (plan.termValues && plan.termValues.length > 0) {
+				for (let j = 0; j < plan.termValues.length; j++) {
+					const termValue = plan.termValues[j];
+					console.log('Validating isNaN(termValue.term)', termValue.term,  isNaN(termValue.term));
+					if (!termValue.term || typeof termValue.term != "number") {
+						addError('Incorrect data for termvalue.term in one of the plans');
+					}
+				}
+			}
+			if (plan.mileageValues && plan.mileageValues.length > 0) {
+				for (let j = 0; j < plan.mileageValues.length; j++) {
+					const milageValue = plan.mileageValues[j];
+					if (!milageValue.mileage || typeof milageValue.mileage != "number") {
+						addError('Incorrect data for milageValue.mileage in one of the plans');
+					}
+				}
+			}
+		}
+	}
 }

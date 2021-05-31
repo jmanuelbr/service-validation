@@ -1,6 +1,5 @@
 let config = {};
 let selectedService = {};
-let errors = {};
 let errorsFound = false;
 
 $(document).ready(function() {
@@ -17,12 +16,13 @@ function getData(ajaxurl) {
 async function initialise() {
     try {
         const res = await getData('http://127.0.0.1:8080/config.json');
+		console.log('res', res);
         config = res;
         for (const service in config) {
             $("#services").append($("<option>").attr("value", config[service].name).text(config[service].label));
         }
     } catch (err) {
-        console.log(err);
+        console.log('ERROR!', err);
     }
 }
 
@@ -73,7 +73,6 @@ $("#validate-cta").click(function() {
 
     switch (selectedService) {
         case 'bsl-prod-ngc-load':
-            console.log('validating bsl-prod-ngc-load');
             validateBslProdNgcLoad(res);
             break;
         case 'sap-finance-filter-options':
@@ -82,6 +81,9 @@ $("#validate-cta").click(function() {
         case 'ial-getPaymentCalculator-default':
             validateIalGetPaymentCalculatorDefault(res);
             break;
+        case 'ial-getPaymentCalculator-non-default':
+            validateIalGetPaymentCalculatorNonDefault(res);
+            break;
         default:
             // code block
     }
@@ -89,10 +91,8 @@ $("#validate-cta").click(function() {
     if (!errorsFound) {
     	$('#modal-title').text('Validation passed');
     	$('#validation-passed-message').show();
-    	console.log('no errors');
     }
     else {
-    	console.log('errors found');
     	$('#modal-title').text('Validation errors found!');
     	$('#validation-passed-message').hide();
     }
@@ -361,7 +361,6 @@ validateBslProdNgcLoad = (res) => {
 }
 
 validateIalGetPaymentCalculatorDefault = (res) => {
-	console.log('res', res);
 	if (!res.success || res.success !== true) {
 		addError('success is not true');
 		return;
@@ -394,7 +393,6 @@ validateIalGetPaymentCalculatorDefault = (res) => {
           else if (plan.termValues && plan.termValues.length <= 0) {
           	addError('termValues array for plan ' + plan.code + ' is empty');
           }
-          console.log('plan.mileageValues.length', plan.mileageValues.length);
           if (plan.mileageValues && plan.mileageValues.length > 0) {
             	for (let j = 0; j < plan.mileageValues.length; j++) {
             			let mileageValue = plan.mileageValues[j];
@@ -412,6 +410,25 @@ validateIalGetPaymentCalculatorDefault = (res) => {
 
 }
 
+validateIalGetPaymentCalculatorNonDefault = (res) => {
+    if (!res) {
+		addError("Response is not valid");
+		return;
+	}
+    if (!res.success) {
+		addError("Success returned is not true");
+		return;
+	}
+	if (!res.monthlyPayment || typeof res.monthlyPayment != 'number' || res.monthlyPayment <= 0) {
+		addError("monthlyPayment is invalid");
+	}
+	if (!res.term || typeof res.term != 'number' || res.term <= 0) {
+		addError("term is invalid");
+	}
+	if (!res.sellingPrice || typeof res.sellingPrice != 'number' || res.sellingPrice <= 0) {
+		addError("sellingPrice is invalid");
+	}
+}
 validateSapFinanceFilterOptions = (res) => {
 	if (!res.displayValues || !res.displayValues.plans || res.displayValues.plans.length <= 0) {
 		addError('No plans available');
@@ -435,7 +452,6 @@ validateSapFinanceFilterOptions = (res) => {
 			if (plan.termValues && plan.termValues.length > 0) {
 				for (let j = 0; j < plan.termValues.length; j++) {
 					const termValue = plan.termValues[j];
-					console.log('Validating isNaN(termValue.term)', termValue.term,  isNaN(termValue.term));
 					if (!termValue.term || typeof termValue.term != "number") {
 						addError('Incorrect data for termvalue.term in one of the plans');
 					}
@@ -443,8 +459,8 @@ validateSapFinanceFilterOptions = (res) => {
 			}
 			if (plan.mileageValues && plan.mileageValues.length > 0) {
 				for (let j = 0; j < plan.mileageValues.length; j++) {
-					const milageValue = plan.mileageValues[j];
-					if (!milageValue.mileage || typeof milageValue.mileage != "number") {
+					const mileage = plan.mileageValues[j];
+					if (!mileage.mileage || typeof mileage.mileage != "number") {
 						addError('Incorrect data for milageValue.mileage in one of the plans');
 					}
 				}

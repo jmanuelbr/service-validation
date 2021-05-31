@@ -10,8 +10,13 @@
       "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v1/finance-filter-options "
    },
    "ial-getPaymentCalculator-default":{
-      "label":"IAL EDU getPaymentCalculator (default)",
+      "label":"IAL EDU getPaymentCalculator (Default)",
       "name": "ial-getPaymentCalculator-default",
+      "url":"https://www.authagent.ford.com/api/secure/financeial/finance/getPaymentCalculator"
+   },
+   "ial-getPaymentCalculator-non-default":{
+      "label":"IAL EDU getPaymentCalculator (Non default)",
+      "name": "ial-getPaymentCalculator-non-default",
       "url":"https://www.authagent.ford.com/api/secure/financeial/finance/getPaymentCalculator"
    }
 }

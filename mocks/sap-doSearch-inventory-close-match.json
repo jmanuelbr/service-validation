@@ -1,0 +1,822 @@
+{
+  "type": "productCategorySearchPageWsDTO",
+  "pagination": {
+    "currentPage": 0,
+    "pageSize": 6,
+    "sort": "actionPrice-asc",
+    "totalPages": 7,
+    "totalResults": 37
+  },
+  "products": [
+    {
+      "baseProduct": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+      "co2Info": {
+        "co2EmissionBEV": "0 g/Km",
+        "co2emissionWhileDriving": "0 g/Km",
+        "energyConsumptionKm": "17.2 kWh/100Km",
+        "energyConsumptionMiles": "26.6 kWh/100Miles",
+        "fuelEfficiencyBevKM": "17.2 kWh/100Km",
+        "fuelEfficiencyBevMiles": "26.6 kWh/100Miles",
+        "rangeBEV": "440.0 ",
+        "rating": "A+"
+      },
+      "code": "spec-100000411059",
+      "dealerInfo": {
+        "vinAvailabilityStatus": "ANY_DEALER"
+      },
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,3ESSJ,ACMRA_VS-KZ,BS-SA,DR--D_EN-C1_HTHAE_TR-WA,PNZAT-40130.0",
+      "leadTime": "10",
+      "leadTimeGroup": "HAPPY_TO_WAIT",
+      "marketingIdentity": {
+        "modelYear": "2021",
+        "nameplate": "Mustang Mach-E"
+      },
+      "mediaInfo": {
+        "showRoomImgUrl": "https://www.gpas-cache.ford.com/composite.png?catalogID=WAEGB-CGW-2021-CX727BEVSUVGBR202100&featureConditions=3ESSJ%2CACMRA_VS-KZ%2CBS-SA%2CDR--D_EN-C1_HTHAE_TR-WA%2CPNZAT&angleNo=0&viewType=exterior&width=0&height=0"
+      },
+      "missingFilterParams": [
+        "series",
+        "paint"
+      ],
+      "priceInfo": {
+        "actionPrice": 40130,
+        "customerSaving": 1200,
+        "governmentGrant": 0,
+        "grossRetail": 0,
+        "netRetail": 0,
+        "recommendedOTRTotalPrice": 41330,
+        "rrp": 41330,
+        "vatAmount": 0,
+        "vatAmountWithOTR": 6879.17
+      },
+      "wersFeaturesInfo": {
+        "bodyStyle": {
+          "code": "BS-SA",
+          "description": "5 DOOR SUV"
+        },
+        "paint": {
+          "code": "PNZAT",
+          "description": "ABSOLUTE BLACK"
+        },
+        "powerTrain": {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "description": "STANDARD RANGE RWD"
+        },
+        "series": {
+          "code": "ACMRA_VS-KZ",
+          "description": "MUSTANG MACH-E"
+        },
+        "trim": {
+          "code": "3ESSJ",
+          "description": "BLACK ONYX SENSICO"
+        }
+      }
+    },
+    {
+      "baseProduct": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+      "co2Info": {
+        "co2EmissionBEV": "0 g/Km",
+        "co2emissionWhileDriving": "0 g/Km",
+        "energyConsumptionKm": "17.2 kWh/100Km",
+        "energyConsumptionMiles": "26.6 kWh/100Miles",
+        "fuelEfficiencyBevKM": "17.2 kWh/100Km",
+        "fuelEfficiencyBevMiles": "26.6 kWh/100Miles",
+        "rangeBEV": "440.0 ",
+        "rating": "A+"
+      },
+      "code": "spec-100000411062",
+      "dealerInfo": {
+        "vinAvailabilityStatus": "ANY_DEALER"
+      },
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,3ESSJ,ACMRA_VS-KZ,BS-SA,DR--D_EN-C1_HTHAE_TR-WA,PN4HZ-40930.0",
+      "leadTime": "10",
+      "leadTimeGroup": "HAPPY_TO_WAIT",
+      "marketingIdentity": {
+        "modelYear": "2021",
+        "nameplate": "Mustang Mach-E"
+      },
+      "mediaInfo": {
+        "showRoomImgUrl": "https://www.gpas-cache.ford.com/composite.png?catalogID=WAEGB-CGW-2021-CX727BEVSUVGBR202100&featureConditions=3ESSJ%2CACMRA_VS-KZ%2CBS-SA%2CDR--D_EN-C1_HTHAE_TR-WA%2CPN4HZ&angleNo=0&viewType=exterior&width=0&height=0"
+      },
+      "missingFilterParams": [
+        "series",
+        "paint"
+      ],
+      "priceInfo": {
+        "actionPrice": 40930,
+        "customerSaving": 1200,
+        "governmentGrant": 0,
+        "grossRetail": 800,
+        "netRetail": 666.67,
+        "recommendedOTRTotalPrice": 42130,
+        "rrp": 42130,
+        "vatAmount": 133.33,
+        "vatAmountWithOTR": 7012.5
+      },
+      "wersFeaturesInfo": {
+        "bodyStyle": {
+          "code": "BS-SA",
+          "description": "5 DOOR SUV"
+        },
+        "paint": {
+          "code": "PN4HZ",
+          "description": "SPACE WHITE"
+        },
+        "powerTrain": {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "description": "STANDARD RANGE RWD"
+        },
+        "series": {
+          "code": "ACMRA_VS-KZ",
+          "description": "MUSTANG MACH-E"
+        },
+        "trim": {
+          "code": "3ESSJ",
+          "description": "BLACK ONYX SENSICO"
+        }
+      }
+    },
+    {
+      "baseProduct": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+      "co2Info": {
+        "co2EmissionBEV": "0 g/Km",
+        "co2emissionWhileDriving": "0 g/Km",
+        "energyConsumptionKm": "17.2 kWh/100Km",
+        "energyConsumptionMiles": "26.6 kWh/100Miles",
+        "fuelEfficiencyBevKM": "17.2 kWh/100Km",
+        "fuelEfficiencyBevMiles": "26.6 kWh/100Miles",
+        "rangeBEV": "440.0 ",
+        "rating": "A+"
+      },
+      "code": "spec-100000411061",
+      "dealerInfo": {
+        "vinAvailabilityStatus": "ANY_DEALER"
+      },
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,3ESSJ,ACMRA_VS-KZ,BS-SA,DR--D_EN-C1_HTHAE_TR-WA,PN4HJ-40930.0",
+      "leadTime": "10",
+      "leadTimeGroup": "HAPPY_TO_WAIT",
+      "marketingIdentity": {
+        "modelYear": "2021",
+        "nameplate": "Mustang Mach-E"
+      },
+      "mediaInfo": {
+        "showRoomImgUrl": "https://www.gpas-cache.ford.com/composite.png?catalogID=WAEGB-CGW-2021-CX727BEVSUVGBR202100&featureConditions=3ESSJ%2CACMRA_VS-KZ%2CBS-SA%2CDR--D_EN-C1_HTHAE_TR-WA%2CPN4HJ&angleNo=0&viewType=exterior&width=0&height=0"
+      },
+      "missingFilterParams": [
+        "series",
+        "paint"
+      ],
+      "priceInfo": {
+        "actionPrice": 40930,
+        "customerSaving": 1200,
+        "governmentGrant": 0,
+        "grossRetail": 800,
+        "netRetail": 666.67,
+        "recommendedOTRTotalPrice": 42130,
+        "rrp": 42130,
+        "vatAmount": 133.33,
+        "vatAmountWithOTR": 7012.5
+      },
+      "wersFeaturesInfo": {
+        "bodyStyle": {
+          "code": "BS-SA",
+          "description": "5 DOOR SUV"
+        },
+        "paint": {
+          "code": "PN4HJ",
+          "description": "ICONIC SILVER"
+        },
+        "powerTrain": {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "description": "STANDARD RANGE RWD"
+        },
+        "series": {
+          "code": "ACMRA_VS-KZ",
+          "description": "MUSTANG MACH-E"
+        },
+        "trim": {
+          "code": "3ESSJ",
+          "description": "BLACK ONYX SENSICO"
+        }
+      }
+    },
+    {
+      "baseProduct": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+      "co2Info": {
+        "co2EmissionBEV": "0 g/Km",
+        "co2emissionWhileDriving": "0 g/Km",
+        "energyConsumptionKm": "17.2 kWh/100Km",
+        "energyConsumptionMiles": "26.6 kWh/100Miles",
+        "fuelEfficiencyBevKM": "17.2 kWh/100Km",
+        "fuelEfficiencyBevMiles": "26.6 kWh/100Miles",
+        "rangeBEV": "440.0 ",
+        "rating": "A+"
+      },
+      "code": "spec-100000411063",
+      "dealerInfo": {
+        "vinAvailabilityStatus": "ANY_DEALER"
+      },
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,3ESSJ,ACMRA_VS-KZ,BS-SA,DR--D_EN-C1_HTHAE_TR-WA,PN4JU-41280.0",
+      "leadTime": "10",
+      "leadTimeGroup": "HAPPY_TO_WAIT",
+      "marketingIdentity": {
+        "modelYear": "2021",
+        "nameplate": "Mustang Mach-E"
+      },
+      "mediaInfo": {
+        "showRoomImgUrl": "https://www.gpas-cache.ford.com/composite.png?catalogID=WAEGB-CGW-2021-CX727BEVSUVGBR202100&featureConditions=3ESSJ%2CACMRA_VS-KZ%2CBS-SA%2CDR--D_EN-C1_HTHAE_TR-WA%2CPN4JU&angleNo=0&viewType=exterior&width=0&height=0"
+      },
+      "missingFilterParams": [
+        "series",
+        "paint"
+      ],
+      "priceInfo": {
+        "actionPrice": 41280,
+        "customerSaving": 1200,
+        "governmentGrant": 0,
+        "grossRetail": 1150,
+        "netRetail": 958.33,
+        "recommendedOTRTotalPrice": 42480,
+        "rrp": 42480,
+        "vatAmount": 191.67,
+        "vatAmountWithOTR": 7070.84
+      },
+      "wersFeaturesInfo": {
+        "bodyStyle": {
+          "code": "BS-SA",
+          "description": "5 DOOR SUV"
+        },
+        "paint": {
+          "code": "PN4JU",
+          "description": "DARK MATTER GREY"
+        },
+        "powerTrain": {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "description": "STANDARD RANGE RWD"
+        },
+        "series": {
+          "code": "ACMRA_VS-KZ",
+          "description": "MUSTANG MACH-E"
+        },
+        "trim": {
+          "code": "3ESSJ",
+          "description": "BLACK ONYX SENSICO"
+        }
+      }
+    },
+    {
+      "baseProduct": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+      "co2Info": {
+        "co2EmissionBEV": "0 g/Km",
+        "co2emissionWhileDriving": "0 g/Km",
+        "energyConsumptionKm": "17.2 kWh/100Km",
+        "energyConsumptionMiles": "26.6 kWh/100Miles",
+        "fuelEfficiencyBevKM": "17.2 kWh/100Km",
+        "fuelEfficiencyBevMiles": "26.6 kWh/100Miles",
+        "rangeBEV": "440.0 ",
+        "rating": "A+"
+      },
+      "code": "spec-100000411037",
+      "dealerInfo": {
+        "vinAvailabilityStatus": "ANY_DEALER"
+      },
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,3ESSJ,ACMRA_VS-KZ,BS-SA,DR--D_EN-C1_HTHAE_TR-WA,PN4HQ-41280.0",
+      "leadTime": "10",
+      "leadTimeGroup": "HAPPY_TO_WAIT",
+      "marketingIdentity": {
+        "modelYear": "2021",
+        "nameplate": "Mustang Mach-E"
+      },
+      "mediaInfo": {
+        "showRoomImgUrl": "https://www.gpas-cache.ford.com/composite.png?catalogID=WAEGB-CGW-2021-CX727BEVSUVGBR202100&featureConditions=3ESSJ%2CACMRA_VS-KZ%2CBS-SA%2CDR--D_EN-C1_HTHAE_TR-WA%2CPN4HQ&angleNo=0&viewType=exterior&width=0&height=0"
+      },
+      "missingFilterParams": [
+        "series",
+        "paint"
+      ],
+      "priceInfo": {
+        "actionPrice": 41280,
+        "customerSaving": 1200,
+        "governmentGrant": 0,
+        "grossRetail": 1150,
+        "netRetail": 958.33,
+        "recommendedOTRTotalPrice": 42480,
+        "rrp": 42480,
+        "vatAmount": 191.67,
+        "vatAmountWithOTR": 7070.84
+      },
+      "wersFeaturesInfo": {
+        "bodyStyle": {
+          "code": "BS-SA",
+          "description": "5 DOOR SUV"
+        },
+        "paint": {
+          "code": "PN4HQ",
+          "description": "RAPID RED"
+        },
+        "powerTrain": {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "description": "STANDARD RANGE RWD"
+        },
+        "series": {
+          "code": "ACMRA_VS-KZ",
+          "description": "MUSTANG MACH-E"
+        },
+        "trim": {
+          "code": "3ESSJ",
+          "description": "BLACK ONYX SENSICO"
+        }
+      }
+    },
+    {
+      "baseProduct": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+      "co2Info": {
+        "co2EmissionBEV": "0 g/Km",
+        "co2emissionWhileDriving": "0 g/Km",
+        "energyConsumptionKm": "17.2 kWh/100Km",
+        "energyConsumptionMiles": "26.6 kWh/100Miles",
+        "fuelEfficiencyBevKM": "17.2 kWh/100Km",
+        "fuelEfficiencyBevMiles": "26.6 kWh/100Miles",
+        "rangeBEV": "440.0 ",
+        "rating": "A+"
+      },
+      "code": "spec-100000411002",
+      "dealerInfo": {
+        "vinAvailabilityStatus": "ANY_DEALER"
+      },
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,3ESSJ,ACMRA_VS-KZ,BS-SA,DR--D_EN-C1_HTHAE_TR-WA,PN4HR-41280.0",
+      "leadTime": "10",
+      "leadTimeGroup": "HAPPY_TO_WAIT",
+      "marketingIdentity": {
+        "modelYear": "2021",
+        "nameplate": "Mustang Mach-E"
+      },
+      "mediaInfo": {
+        "showRoomImgUrl": "https://www.gpas-cache.ford.com/composite.png?catalogID=WAEGB-CGW-2021-CX727BEVSUVGBR202100&featureConditions=3ESSJ%2CACMRA_VS-KZ%2CBS-SA%2CDR--D_EN-C1_HTHAE_TR-WA%2CPN4HR&angleNo=0&viewType=exterior&width=0&height=0"
+      },
+      "missingFilterParams": [
+        "series",
+        "paint"
+      ],
+      "priceInfo": {
+        "actionPrice": 41280,
+        "customerSaving": 1200,
+        "governmentGrant": 0,
+        "grossRetail": 1150,
+        "netRetail": 958.33,
+        "recommendedOTRTotalPrice": 42480,
+        "rrp": 42480,
+        "vatAmount": 191.67,
+        "vatAmountWithOTR": 7070.84
+      },
+      "wersFeaturesInfo": {
+        "bodyStyle": {
+          "code": "BS-SA",
+          "description": "5 DOOR SUV"
+        },
+        "paint": {
+          "code": "PN4HR",
+          "description": "STAR WHITE"
+        },
+        "powerTrain": {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "description": "STANDARD RANGE RWD"
+        },
+        "series": {
+          "code": "ACMRA_VS-KZ",
+          "description": "MUSTANG MACH-E"
+        },
+        "trim": {
+          "code": "3ESSJ",
+          "description": "BLACK ONYX SENSICO"
+        }
+      }
+    }
+  ],
+  "sorts": [
+    {
+      "code": "relevance",
+      "selected": false
+    },
+    {
+      "code": "actionPrice-asc",
+      "selected": true
+    },
+    {
+      "code": "actionPrice-desc",
+      "selected": false
+    },
+    {
+      "code": "customerSaving-asc",
+      "selected": false
+    },
+    {
+      "code": "customerSaving-desc",
+      "selected": false
+    },
+    {
+      "code": "fuelEfficiency-asc",
+      "selected": false
+    },
+    {
+      "code": "fuelEfficiency-desc",
+      "selected": false
+    },
+    {
+      "code": "co2Emission-asc",
+      "selected": false
+    },
+    {
+      "code": "co2Emission-desc",
+      "selected": false
+    },
+    {
+      "code": "byLeadTimeAsc",
+      "selected": false
+    },
+    {
+      "code": "byLeadTimeDesc",
+      "selected": false
+    },
+    {
+      "code": "monthlyPayment-asc",
+      "selected": false
+    },
+    {
+      "code": "monthlyPayment-desc",
+      "selected": false
+    }
+  ],
+  "filters": [
+    {
+      "filterGroupCode": "trim",
+      "filterGroupName": "Trims",
+      "values": [
+        {
+          "code": "11LP8",
+          "count": 1037,
+          "hierarchy": "Trims",
+          "name": "BLACK PERFORATED SENSICO"
+        },
+        {
+          "code": "3ESSJ",
+          "count": 507,
+          "hierarchy": "Trims",
+          "name": "BLACK ONYX SENSICO"
+        },
+        {
+          "code": "11MSJ",
+          "count": 424,
+          "hierarchy": "Trims",
+          "name": "BLACK PERFORATED SENSICO"
+        },
+        {
+          "code": "3EMM5",
+          "count": 67,
+          "hierarchy": "Trims",
+          "name": "Performance Sports Seats"
+        },
+        {
+          "code": "11LUX",
+          "count": 1,
+          "hierarchy": "Trims",
+          "name": "BLACK PERFORATED SENSICO"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "transmissionGroup",
+      "filterGroupName": "transmissionGroup",
+      "values": [
+        {
+          "code": "HAT",
+          "count": 2036,
+          "hierarchy": "",
+          "name": "Automatic Transmission"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "series",
+      "filterGroupName": "Series",
+      "values": [
+        {
+          "code": "ACMRJ_VS-LE",
+          "count": 1033,
+          "hierarchy": "Series",
+          "name": "AWD"
+        },
+        {
+          "code": "ACMRA_VS-KZ",
+          "count": 931,
+          "hierarchy": "Series",
+          "name": "MUSTANG MACH-E"
+        },
+        {
+          "code": "ACMRN_VS-JZ",
+          "count": 67,
+          "hierarchy": "Series",
+          "name": "GT"
+        },
+        {
+          "code": "ACMRK_VS-LE",
+          "count": 5,
+          "hierarchy": "Series",
+          "name": "FIRST EDITION"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "powertrain",
+      "filterGroupName": "Automatic Transmission",
+      "values": [
+        {
+          "code": "DR--H_EN-EJ_HTHAD_TR-WA",
+          "count": 622,
+          "hierarchy": "Automatic Transmission.Hybrid.PowerTrain",
+          "name": "EXTENDED RANGE AWD"
+        },
+        {
+          "code": "DR--D_EN-C1_HTHAE_TR-WA",
+          "count": 507,
+          "hierarchy": "Automatic Transmission.Hybrid.PowerTrain",
+          "name": "STANDARD RANGE RWD"
+        },
+        {
+          "code": "DR--D_EN-EH_HTHAD_TR-WA",
+          "count": 424,
+          "hierarchy": "Automatic Transmission.Hybrid.PowerTrain",
+          "name": "EXTENDED RANGE RWD"
+        },
+        {
+          "code": "DR--H_EN-C2_HTHAE_TR-WA",
+          "count": 416,
+          "hierarchy": "Automatic Transmission.Hybrid.PowerTrain",
+          "name": "STANDARD RANGE AWD"
+        },
+        {
+          "code": "DR--G_EN-EL_HTHAD_TR-WA",
+          "count": 67,
+          "hierarchy": "Automatic Transmission.Hybrid.PowerTrain",
+          "name": "EXTENDED RANGE AWD"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "paint",
+      "filterGroupName": "Orange",
+      "values": [
+        {
+          "code": "PNZAT",
+          "count": 533,
+          "hierarchy": "Black.Paint",
+          "name": "ABSOLUTE BLACK"
+        },
+        {
+          "code": "PN4HQ",
+          "count": 474,
+          "hierarchy": "Red.Paint",
+          "name": "RAPID RED"
+        },
+        {
+          "code": "PN4HZ",
+          "count": 213,
+          "hierarchy": "White.Paint",
+          "name": "SPACE WHITE"
+        },
+        {
+          "code": "PN4HR",
+          "count": 210,
+          "hierarchy": "White.Paint",
+          "name": "STAR WHITE"
+        },
+        {
+          "code": "PN4HJ",
+          "count": 205,
+          "hierarchy": "Paint.Silver",
+          "name": "ICONIC SILVER"
+        },
+        {
+          "code": "PN4JU",
+          "count": 146,
+          "hierarchy": "Paint.Grey",
+          "name": "DARK MATTER GREY"
+        },
+        {
+          "code": "PN4JA",
+          "count": 115,
+          "hierarchy": "Paint.Grey",
+          "name": "CARBONISED GREY"
+        },
+        {
+          "code": "PN4JB",
+          "count": 102,
+          "hierarchy": "Blue.Paint",
+          "name": "INFINITE BLUE"
+        },
+        {
+          "code": "PN4JH",
+          "count": 20,
+          "hierarchy": "Blue.Paint",
+          "name": "GRABBER BLUE"
+        },
+        {
+          "code": "PN4JF",
+          "count": 18,
+          "hierarchy": "Orange.Paint",
+          "name": "CYBER ORANGE"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "nameplate",
+      "filterGroupName": "nameplate",
+      "values": [
+        {
+          "code": "Mustang Mach-E",
+          "count": 2036,
+          "name": "Mustang Mach-E"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "leadTimeGroup",
+      "filterGroupName": "leadTimeGroup",
+      "values": [
+        {
+          "code": "HAPPY_TO_WAIT",
+          "count": 2027,
+          "name": "HAPPY_TO_WAIT"
+        },
+        {
+          "code": "ASAP",
+          "count": 5,
+          "name": "ASAP"
+        },
+        {
+          "code": "SOON",
+          "count": 4,
+          "name": "SOON"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "leadTime",
+      "filterGroupName": "leadTime",
+      "values": [
+        {
+          "code": "10",
+          "count": 1208,
+          "name": "10"
+        },
+        {
+          "code": "20",
+          "count": 715,
+          "name": "20"
+        },
+        {
+          "code": "14",
+          "count": 104,
+          "name": "14"
+        },
+        {
+          "code": "02",
+          "count": 5,
+          "name": "02"
+        },
+        {
+          "code": "05",
+          "count": 4,
+          "name": "05"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "fueltypeGroup",
+      "filterGroupName": "fueltypeGroup",
+      "values": [
+        {
+          "code": "HBD",
+          "count": 2036,
+          "hierarchy": "",
+          "name": "Hybrid"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "features",
+      "filterGroupName": "Factory Fitted Options",
+      "values": [
+        {
+          "code": "J5XAC",
+          "count": 1046,
+          "hierarchy": "Factory Fitted Options.Audio and Communication Systems.Comfort and Convenience",
+          "name": "TECHNOLOGY PACK +"
+        },
+        {
+          "code": "JZCAE",
+          "count": 987,
+          "hierarchy": "Factory Fitted Options.Electrical.Utility",
+          "name": "UP TO 115KW DC HIGH POWER CHARGING (STANDARD RANGE) & UP TO 150KW DC HIGH POWER CHARGING (EXTENDED RANGE)"
+        },
+        {
+          "code": "CJDAS",
+          "count": 3,
+          "hierarchy": "Factory Fitted Options.Option packs.Styling & Appearance",
+          "name": "CONTRAST COLOUR PAINTED ROOF – BLACK"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "colorGroup",
+      "filterGroupName": "colorGroup",
+      "values": [
+        {
+          "code": "black",
+          "count": 533,
+          "hierarchy": "",
+          "name": "Black"
+        },
+        {
+          "code": "red",
+          "count": 474,
+          "hierarchy": "",
+          "name": "Red"
+        },
+        {
+          "code": "white",
+          "count": 423,
+          "hierarchy": "",
+          "name": "White"
+        },
+        {
+          "code": "grey",
+          "count": 261,
+          "hierarchy": "",
+          "name": "Grey"
+        },
+        {
+          "code": "silver",
+          "count": 205,
+          "hierarchy": "",
+          "name": "Silver"
+        },
+        {
+          "code": "blue",
+          "count": 122,
+          "hierarchy": "",
+          "name": "Blue"
+        },
+        {
+          "code": "orange",
+          "count": 18,
+          "hierarchy": "",
+          "name": "Orange"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "bodyStyle",
+      "filterGroupName": "Bodystyle",
+      "values": [
+        {
+          "code": "BS-SA",
+          "count": 2036,
+          "hierarchy": "Bodystyle",
+          "name": "5 DOOR SUV"
+        }
+      ]
+    },
+    {
+      "filterGroupCode": "baseProduct",
+      "filterGroupName": "baseProduct",
+      "values": [
+        {
+          "code": "WAEGB-CGW-2021-CX727BEVSUVGBR202100",
+          "count": 2036,
+          "name": "WAEGB-CGW-2021-CX727BEVSUVGBR202100"
+        },
+        {
+          "code": "WAEGB-CTD-2019-CX482KugaGBR202050",
+          "count": 864,
+          "name": "WAEGB-CTD-2019-CX482KugaGBR202050"
+        },
+        {
+          "code": "WAEGB-CTD-2019-KugaGBR202125",
+          "count": 137,
+          "name": "WAEGB-CTD-2019-KugaGBR202125"
+        },
+        {
+          "code": "WAEGB-CTD-2019-KugaGBR202150",
+          "count": 90,
+          "name": "WAEGB-CTD-2019-KugaGBR202150"
+        },
+        {
+          "code": "WAEGB-CZG-2021-MustangGBR202150",
+          "count": 7,
+          "name": "WAEGB-CZG-2021-MustangGBR202150"
+        }
+      ]
+    }
+  ]
+}

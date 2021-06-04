@@ -7,7 +7,12 @@
    "sap-finance-filter-options":{
       "label":"SAP Finance Filter Options",
       "name": "sap-finance-filter-options",
-      "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v1/finance-filter-options "
+      "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v1/finance-filter-options"
+   },
+   "sap-doSearch-inventory-close-match" : {
+      "label":"SAP Inventory Close Match (doSearch)",
+      "name": "sap-doSearch-inventory-close-match",
+      "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v2/products/doSearch"
    },
    "ial-getPaymentCalculator-default":{
       "label":"IAL EDU getPaymentCalculator (Default)",

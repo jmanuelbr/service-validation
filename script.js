@@ -81,9 +81,12 @@ $("#validate-cta").click(function() {
         case 'ial-getPaymentCalculator-default':
             validateIalGetPaymentCalculatorDefault(res);
             break;
-        case 'ial-getPaymentCalculator-non-default':
-            validateIalGetPaymentCalculatorNonDefault(res);
-            break;
+		case 'ial-getPaymentCalculator-non-default':
+			validateIalGetPaymentCalculatorNonDefault(res);
+			break;
+		case 'sap-doSearch-inventory-close-match':
+			validateSapDoSearchCloseMatch(res);
+			break;
         default:
             // code block
     }
@@ -464,6 +467,29 @@ validateSapFinanceFilterOptions = (res) => {
 						addError('Incorrect data for milageValue.mileage in one of the plans');
 					}
 				}
+			}
+		}
+	}
+}
+
+validateSapDoSearchCloseMatch = (res) => {
+	if (!res) {
+		addError('Error in SAP response, incorrect format');
+	}
+	else {
+		const pagination = res.pagination;
+		if (!pagination) {
+			addError('Error in SAP response, pagination field does not exist');
+		}
+		else {
+			if (pagination.totalResults == 0) {
+				addError('Error in SAP response, totalResults returned is 0');
+			}
+			else if (typeof pagination.totalResults != "number") {
+				addError('Error in SAP response, totalResults is not a number');
+			}
+			else if (!pagination.totalResults) {
+				addError('Error in SAP response, totalResults field does not exist');
 			}
 		}
 	}

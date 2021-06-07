@@ -43,6 +43,9 @@ async function initialise() {
 		$('#endpointDropdown').hide();
 		displayEndpointList = false;
 		$("#select-endpoint-button").html(config[selectedService].label);
+		$("#json-response").val("{\n" +
+			"\t...\n" +
+			"}")
 	});
 }
 

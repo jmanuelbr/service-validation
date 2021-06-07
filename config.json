@@ -10,9 +10,14 @@
       "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v1/finance-filter-options"
    },
    "sap-doSearch-inventory-close-match" : {
-      "label":"SAP Inventory Close Match (doSearch)",
+      "label":"SAP Inventory CLOSE Match (doSearch)",
       "name": "sap-doSearch-inventory-close-match",
       "url":"https://apigtwqa.ford.com/oneford/api/gep/gbr/v2/products/doSearch"
+   },
+   "sap-doSearch-inventory-exact-match" : {
+      "label":"SAP Inventory EXACT Match (doSearch)",
+      "name": "sap-doSearch-inventory-exact-match",
+      "url":"https://apigtwdev.ford.com/gep/sb/gep-qa/gbr/products/doSearch?fields=TOTAL_MATCHES&query=:relevance:series:ACMRJ_VS-LE:powertrain:DR--H_EN-C2_HTHAE_TR-WA:bodystyle:BS-SA:trim:11LP8: baseProduct:WAEGB-CGW-2021-CX727BEVSUVGBR202100&isExactMatch=true"
    },
    "ial-getPaymentCalculator-default":{
       "label":"IAL EDU getPaymentCalculator (Default)",

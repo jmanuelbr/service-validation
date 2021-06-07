@@ -1,0 +1,16 @@
+{
+  "type": "productCategorySearchPageWsDTO",
+  "pagination": {
+    "currentPage": 0,
+    "pageSize": 20,
+    "sort": "relevance",
+    "totalPages": 1,
+    "totalResults": 1
+  },
+  "products": [
+    {
+      "code": "spec-100000237036",
+      "groupBy": "WAEGB-CGW-2021-CX727BEVSUVGBR202100,11LP8,ACMRJ_VS-LE,BS-SA,DR--H_EN-C2_HTHAE_TR-WA,PNZAT-46650.0"
+    }
+  ]
+}

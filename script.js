@@ -1,6 +1,7 @@
 let config = {};
 let selectedService = {};
 let errorsFound = false;
+let displayEndpointList = false;
 
 $(document).ready(function() {
     initialise();
@@ -16,14 +17,33 @@ function getData(ajaxurl) {
 async function initialise() {
     try {
         const res = await getData('http://127.0.0.1:8080/config.json');
-		console.log('res', res);
         config = res;
         for (const service in config) {
             $("#services").append($("<option>").attr("value", config[service].name).text(config[service].label));
+			$("#endpointDropdown").append($("<a>").attr("href", config[service].name).attr("class","endpoint-list-item").text(config[service].label));
         }
     } catch (err) {
         console.log('ERROR!', err);
     }
+
+    $("#select-endpoint-button").click(function () {
+		endpointListToggle();
+		if (displayEndpointList) {
+			$( "#endpointSearchInput" ).focus()
+		}
+	})
+	$(".endpoint-list-item").click(function(event) {
+		event.preventDefault();
+		selectedService = $(this).attr("href");
+		const url = config[selectedService].url;
+		$('#service-url').html("<i>URL example:</i> <a href='" + url + "' target='_blank'>" + url + "</a>");
+		document.getElementById("service-url").style.visibility = "visible";
+		$('#validate-cta').removeClass('disabled');
+		$('#load-mock-cta').removeClass('disabled');
+		$('#endpointDropdown').hide();
+		displayEndpointList = false;
+		$("#select-endpoint-button").html(config[selectedService].label);
+	});
 }
 
 
@@ -56,6 +76,7 @@ $("#prettify").click(function() {
     }
 
 });
+
 
 $("#validate-cta").click(function() {
 		errorsFound = false;
@@ -520,3 +541,29 @@ validateSapDoSearchExactMatch = (res) => {
 		}
 	}
 }
+
+endpointListToggle = () => {
+	displayEndpointList = !displayEndpointList;
+	$('#endpointDropdown').toggle(displayEndpointList);
+};
+
+
+$("#endpointSearchInput").keyup(function(e){
+	let input, filter, ul, li, a, i;
+	if (e.key == "Escape") {
+		displayEndpointList = !displayEndpointList;
+		$('#endpointDropdown').toggle(displayEndpointList);
+	}
+	input = document.getElementById("endpointSearchInput");
+	filter = input.value.toUpperCase();
+	div = document.getElementById("endpointDropdown");
+	a = div.getElementsByTagName("a");
+	for (i = 0; i < a.length; i++) {
+		txtValue = a[i].textContent || a[i].innerText;
+		if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			a[i].style.display = "";
+		} else {
+			a[i].style.display = "none";
+		}
+	}
+});
